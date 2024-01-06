@@ -1,0 +1,15 @@
+{
+  "main": "out.js",
+  "files": [
+    "out.js"
+  ],
+  "scripts": {
+    "build": "esbuild entry.js --bundle --format=esm --outfile=out.js",
+    "start": "npx @web/dev-server --node-resolve --watch"
+  },
+  "devDependencies": {
+    "@enhance/enhance-style-transform": "^0.1.2",
+    "@enhance/ssr": "^3.5.1",
+    "esbuild": "^0.19.11"
+  }
+}
